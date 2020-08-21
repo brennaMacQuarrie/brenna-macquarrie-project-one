@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- link to fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- link to styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link to favicon -->
+    <link type="image/png" href="images/favicon.png" rel="icon">
+    <script src="https://kit.fontawesome.com/4fba6b96fc.js" crossorigin="anonymous"></script>
+    <title>Paint Gallery</title>
+</head>
+<body>
+    <main>
+        <header id="home">
+            <div class="wrapper">
+                <nav class="navTop">
+                    <!-- <button>Menu Toggle</button> -->
+                    <ul class="clearfix">
+                        <!-- should href be words? -->
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1>Paint Gallery</h1>
+            </div>
+        </header>
+<!--________________ ABOUT SECTION -->
+        <section class="full1" id="about">
+            <div class="wrapper product clearfix">
+                <img src="./assets/image-6@2x.png" alt="colorful bottles of paint on a shelf.">
+                <div>
+                    <h2>New Product on the Shelves</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum tempore modi ut dolore illum, non sint voluptate rerum nobis vel asperiores fugit. Nostrum dolorem, porro reprehenderit ipsam numquam alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio doloremque, quibusdam repellendus cupiditate at provident obcaecati animi id labore saepe ipsam eum ex rem quam praesentium illum voluptates officia laudantium dolorem </p>
+                    <a href="#" class="button blue">read more</a>
+                </div>
+            </div>
+        </section>
+<!------------------------------------------------------ GALLERY -->
+        <section class="full2">
+            <div class="wrapper gallery">
+                <h2>latest exhibitions</h2>
+                <ul>
+                    <!-- can i use img tags in a list? never used a list for images before -->
+                    <li><img src="./assets/gallery-image-1@2x.png" alt="a close up texturized splatter of painting."></li>
+                    <li><img src="./assets/gallery-image-2@2x.png" alt="an oceanlike closeup of liquid-looking paint."></li>
+                    <li><img src="./assets/gallery-image-3@2x.png" alt="3 open cans of purple, orange, and red paint on a white floor canvas."></li>
+                </ul>
+            </div>
+        </section>
+<!-- ------------------------------------------------FAVICON -->
+        <section class="fullFav">
+            <div class="wrapper favicons clearfix">
+                <div class="favi">
+                    <a href="3"><span class="far fa-image"></span></a>
+                    <h3>catalogue</h3>
+                </div>
+                <div class="favi">
+                    <a href="#"><span class="far fa-calendar-alt"></span></a>
+                    <h3>events</h3>
+                </div>
+                <div class="favi">
+                    <a href="#"><span class="far fa-handshake"></span></a>    <h3>collaborations</h3>
+                </div>
+            </div>
+        </section>
+<!--------------------------------------------------------- BLOG -->
+        <section class="fullBlog clearfix">
+            <!-- best practices for a section with wrapper on one side only? Bkgd images or no? -->
+            <div class="wrapper">
+                <div class="blogTextL blogL">
+                    <h2>finding the right brushes</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nulla laboriosam dignissimos esse veritatis? Id in excepturi optio aperiam quisquam. Exercitationem ab est voluptatem praesentium neque hic veniam provident eius.</p>
+                    <a href="#" class="purp button">read more</a>
+                </div>
+            </div>
+                
+            <div class="blogL">
+                <img src="./assets/right-image@2x.png" alt=" a collection of bright wide paint brushes.">
+            </div>
+
+            <div class="wrapper">
+                <div class="blogTextR blogR">
+                    <h2>all kinds of paints</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nulla laboriosam dignissimos esse veritatis? Id
+                    in excepturi optio aperiam quisquam. Exercitationem ab est voluptatem praesentium neque hic veniam provident eius.</p>
+                    <a href="#" class="purp button">read more</a>
+                </div>
+            </div>
+                    
+            <div class="blogR">
+                <img src="./assets/left-image@2x.png" alt="a collection of open paint cans from birds eye view.">
+            </div>
+            
+        </section> 
+    </main>
+
+<!-- should this all be in footer or just... what is in there now? -->
+    <section class="end">
+        <div class="wrapper clearfix">
+            <nav class="navBottom">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="subscribe">
+                <h3>stay updated</h3>
+                <p>subscribe to our newsletter to stay updated.</p>
+                <div class="form">
+                    <input type="email" class="email" id="email" placeholder="email address">
+                    <a class="sub button">subscribe</a>
+                </div>
+            </div>
+            <div class="address">
+                <h3>Contact</h3>
+                <p>info@email.com | 123-456-7890</p>
+                <p>123 some road, Toronto, ON</p>
+                <p>A5A 5A5, Canada</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created at Juno College</p>
+    </footer>
+
+</body>
+</html>
