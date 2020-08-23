@@ -265,6 +265,7 @@ h3 {
     padding-top: 0;
 }
 
+/* i really want these to align at the bottom of the section instead of aligning them with padding at top, but without flex i dont know how to do this? */
 .navBottom,
 .subscribe,
 .address {
