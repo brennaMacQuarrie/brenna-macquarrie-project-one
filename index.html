@@ -15,24 +15,28 @@
     <title>Paint Gallery</title>
 </head>
 <body>
+    <!-- skiplink -->
     <a href="#maincontent" class="skip-link">Skip to Main Content.</a>
+
+
     <main>
         <header id="home">
             <div class="wrapper">
                 <nav class="navTop">
-                    <ul class="clearfix maincontent">
+                    <a class="burger"><span class="fas fa-bars" aria-label="drop-menu"></span></a>
+                    <ul class="clearfix">
                         <!-- should href be words? -->
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#maincontent">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <h1>Paint Gallery</h1>
             </div>
         </header>
-<!--________________ ABOUT SECTION -->
-        <section class="full1" id="about">
+<!-------------------------------------------------- ABOUT SECTION -->
+        <section class="full1" id="maincontent">
             <div class="wrapper product clearfix">
                 <img src="./assets/image-6@2x.png" alt="colorful bottles of paint on a shelf.">
                 <div>
@@ -44,7 +48,7 @@
         </section>
 <!------------------------------------------------------ GALLERY -->
         <section class="full2">
-            <div class="wrapper gallery">
+            <div class="wrapper gallery" id="about">
                 <h2>latest exhibitions</h2>
                 <ul>
                     <!-- can i use img tags in a list? never used a list for images before -->
@@ -58,35 +62,40 @@
         <section class="fullFav">
             <div class="wrapper favicons clearfix">
                 <div class="favi">
-                    <a href="3"><span class="far fa-image"></span></a>
+                    <a href="#"><span class="far fa-image" aria-hidden="true"></span></a>
                     <h3>catalogue</h3>
                 </div>
                 <div class="favi">
-                    <a href="#"><span class="far fa-calendar-alt"></span></a>
+                    <a href="#"><span class="far fa-calendar-alt" aria-hidden="true"></span></a>
                     <h3>events</h3>
                 </div>
                 <div class="favi">
-                    <a href="#"><span class="far fa-handshake"></span></a>    <h3>collaborations</h3>
+                    <a href="#"><span class="far fa-handshake" aria-hidden="true"></span></a>    
+                    <h3>collaborations</h3>
                 </div>
             </div>
         </section>
 <!--------------------------------------------------------- BLOG -->
-        <section class="fullBlog clearfix">
-            <!-- best practices for a section with wrapper on one side only? Bkgd images or no? -->
-            <div class="wrapper">
-                <div class="blogTextL blogL">
+        <section class="fullBlog clearfix" id="blog">
+
+            <!-- IMG -->
+            <img class="blogR" src="./assets/right-image@2x.png" alt=" a collection of bright wide paint brushes.">
+
+            <!-- TEXT -->
+            <div class="wrapper clearfix">
+                <div class="blogTextL blogR">
                     <h2>finding the right brushes</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nulla laboriosam dignissimos esse veritatis? Id in excepturi optio aperiam quisquam. Exercitationem ab est voluptatem praesentium neque hic veniam provident eius.</p>
                     <a href="#" class="purp button">read more</a>
                 </div>
             </div>
-                
-            <div class="blogL">
-                <img src="./assets/right-image@2x.png" alt=" a collection of bright wide paint brushes.">
-            </div>
 
-            <div class="wrapper">
-                <div class="blogTextR blogR">
+            <!-- IMG2 -->
+            <img class="blogL" src="./assets/left-image@2x.png" alt="a collection of open paint cans from birds eye view.">
+
+            <!-- TEXT2 -->
+            <div class="wrapper clearfix">
+                <div class="blogTextR blogL">
                     <h2>all kinds of paints</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nulla laboriosam dignissimos esse veritatis? Id
                     in excepturi optio aperiam quisquam. Exercitationem ab est voluptatem praesentium neque hic veniam provident eius.</p>
@@ -94,22 +103,19 @@
                 </div>
             </div>
                     
-            <div class="blogR">
-                <img src="./assets/left-image@2x.png" alt="a collection of open paint cans from birds eye view.">
-            </div>
             
         </section> 
     </main>
 
 <!-- should this all be in footer or just... what is in there now? -->
-    <section class="end">
+    <section class="end" id="contact">
         <div class="wrapper clearfix">
             <nav class="navBottom">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#maincontent">Home</a></li>
+                    <li><a href="#about">Blog</a></li>
+                    <li><a href="#blog">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="subscribe">
@@ -117,7 +123,7 @@
                 <p>subscribe to our newsletter to stay updated.</p>
                 <form class="form clearfix">
                     <input type="email" class="email" id="email" placeholder="email address">
-                    <a class="sub button">subscribe</a>
+                    <a href="#" class="sub button">subscribe</a>
                 </form>
             </div>
             <div class="address">

@@ -30,6 +30,7 @@ body {
     font-family: 'East Sea Dokdo', cursive;	
     color: #201E21;
     font-size: 2rem;
+    /* overflow-x: hidden; */
 }
 
 
@@ -37,23 +38,31 @@ body {
 
 .skip-link {
     position: absolute;
-    right: -1000px;
-    top: 20px;
+    left: -1000px;
+    top: 15px;
     z-index: 999;
+
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
     font-size: 15px;
     border: 2px black double;
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .skip-link:focus {
+    left: unset;
     right: 10px;
 }
 
 /* ----------------------------------------------- GEN NAV STYLZ */
+
+.burger {
+    display: none;
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
 nav ul {
     width: 50%;
     margin: 0;
@@ -109,7 +118,7 @@ h1 {
 }
 
 h2 {
-    font-size: calc(3.5rem + 2.5vw);
+    font-size: calc(3.5rem + 3vw);
     margin: 0;
     padding: 0;
     line-height: 50%;
@@ -231,10 +240,6 @@ h3 {
     width: 50%;
 }
 
-.blogTextL {
-    padding: 5% 5% 0 0;
-}
-
 .blogR {
     float: right;
     width: 50%;
@@ -242,6 +247,10 @@ h3 {
 
 .blogTextR {
     padding: 5% 0 0 5%;
+}
+
+.blogTextL {
+    padding: 5% 5% 0 0;
 }
 
 
@@ -289,6 +298,10 @@ h3 {
     height: 100%;
 }
 
+.form {
+    height: 100%;
+}
+
 .form a {
     display: inline-block;
     background-color: #0178A5;
@@ -314,10 +327,7 @@ footer p {
 /* ------------------------------------------ MEDIA QUERIEZ */
 
 @media (max-width: 940px) {
-    .blogTextL,
-    .blogTextR {
-        padding: 3%;
-    }
+
     .button {
         font-size: 35px;
     }
@@ -330,8 +340,11 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .navTop {
-        visibility: hidden;
+    .navTop ul {
+        display: none;
+    }
+    .burger {
+        display: inline-block;
     }
 
     .blogL,
@@ -384,17 +397,10 @@ footer p {
         padding: 5px;
         text-align: center;
     }
-    form a {
-    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    
-    .navTop {
-        visibility: hidden;
-    }
-
     .product img,
     .product div,
     .favi {
